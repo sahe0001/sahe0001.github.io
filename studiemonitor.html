@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>sahe0001</title>
+        <title>Studiemonitor | Tareq Sahebzadah</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/ico" href="favicon.ico">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -12,6 +13,13 @@
             margin-bottom: 0;
             border-radius: 0;
             }
+        .page-header {
+          margin: 0 0 0 20px;
+        }
+        .page-text {
+          margin: 0 0 0 20px;
+          margin-top: 10px;
+        }
         </style>
     </head>
     <body>
@@ -23,28 +31,32 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>                        
                         </button>
-                        <a class="navbar-brand" href="#">sahe0001</a>
+                        <a class="navbar-brand" href="/">Tareq Sahebzadah</a>
                       </div>
                       <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                           <li><a href="index.html">Home</a></li>
                           <li><a href="introductie.html">Introductie</a></li>
                           <li class="active"><a href="studiemonitor.html">Studiemonitor</a></li>
+                          <li><a href="studiewijzer.html">Studiewijzer</a></li>
                         </ul>
                       </div>
                     </div>
                   </nav>
-                  <center>
                   <div class="page-header">
-                    <h1>Studiemonitor<br><small>Mijn dashboard</small></h1>
-                    </div>
-                    <table class="table" style="width: 50%;">
+                      <img src="img/foto.jpg" alt="profielfoto" align="right" style="box-shadow: 0 0 4px 0 black; margin: 0 20px 0 0">
+                    <h1>Studiemonitor<br><small>Mijn persoonlijke dashboard</small></h1>
+                    <br>
+                  </div>
+                  <div class="page-text">
+                    <table class="table">
                         <thead>
                       <tr>
                         <th>Cursus</th>
                         <th>Toets</th>
                         <th>Weging</th>
                         <th>EC</th>
+                        <th>Resultaat</th> <!-- minus = niet bekend, ok = gehaald, remove = niet gehaald -->
                       </tr>
                     </thead>
                     <tbody>
@@ -53,189 +65,220 @@
                         <td>Eindgesprek</td>
                         <td>100%</td>
                         <td>2.5</td>
+                        <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                         <td>Computer Science Basics</td>
                         <td>Theorietentamen</td>
                         <td>100%</td>
                         <td>7.5</td>
+                        <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                         <td>Programming Basics</td>
                         <td>Casustoets</td>
                         <td>100%</td>
                         <td>5.0</td>
+                        <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                         <td>Professionals Skills 1</td>
                         <td>Presentatie</td>
                         <td>33%</td>
                         <td>2.5</td>
+                        <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Verslag</td>
                           <td>33%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Functioneringsgesprek</td>
                           <td>33%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                         <td>HZ Personality 1</td>
                         <td>Portfolio</td>
                         <td>100%</td>
                         <td>2.5</td>
+                        <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                         <td>OOP</td>
                         <td>Casustoets</td>
                         <td>50%</td>
                         <td>10.0</td>
+                        <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Opleidings- en beroepsoriëntatie</td>
                           <td>Eindgesprek</td>
                           <td>100%</td>
                           <td>2.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Computer science basics</td>
                           <td>Theorietentamen</td>
                           <td>100%</td>
                           <td>7.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Programming basics</td>
                           <td>Casustoets</td>
                           <td>100%</td>
                           <td>5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Professional skills 1</td>
                           <td>Presentatie</td>
                           <td>33%</td>
                           <td>2.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Verslag</td>
                           <td>33%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Functioneringsgesprek</td>
                           <td>33%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>HZ Personality</td>
                           <td>Portfolio</td>
                           <td>100%</td>
                           <td>2.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Object-oriented programming</td>
                           <td>Casustoets</td>
                           <td>50%</td>
                           <td>5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Object-oriented programming</td>
                           <td>Groepsproject</td>
                           <td>50%</td>
                           <td>5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Professional skills 2</td>
                           <td>Agile functioneren</td>
                           <td>50%</td>
                           <td>2.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Engels opdrachten</td>
                           <td>25%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Engels werkstuk</td>
                           <td>25%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Professionele werkplek</td>
                           <td>Eindgesprek</td>
                           <td>100%</td>
                           <td>2.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Framework development 1</td>
                           <td>Casustoets</td>
                           <td>100%</td>
                           <td>5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Framework project 1</td>
                           <td>Requirementsverslag</td>
                           <td>50%</td>
                           <td>5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Projectresultaat</td>
                           <td>50%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Professional skills 3</td>
                           <td>Agile functioneren</td>
                           <td>50%</td>
                           <td>2.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Engels opdrachten</td>
                           <td>25%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Engels werkstuk</td>
                           <td>25%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>IT Personality 1</td>
                           <td>Portfolio</td>
                           <td>100%</td>
                           <td>2.5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Framework development 2</td>
                           <td>Opdrachten</td>
                           <td>100%</td>
                           <td>5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td>Framework project 2</td>
                           <td>Code reviews</td>
                           <td>50%</td>
                           <td>5</td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                       <tr>
                           <td></td>
                           <td>Projectresultaat</td>
                           <td>50%</td>
                           <td></td>
+                          <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                       </tr>
                     </tbody>
                     </table>
-                  </center>
-    </body>
-</html>
+                  </div>
+                </body>
+            </html>
